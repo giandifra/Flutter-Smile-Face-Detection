@@ -12,8 +12,8 @@ class FaceDetectionFromImage extends StatefulWidget {
 
 class _FaceDetectionFromImageState extends State<FaceDetectionFromImage> {
   bool loading = true;
-  ui.Image image = null;
-  List<Face> faces = null;
+  ui.Image image;
+  List<Face> faces;
   final FaceDetector faceDetector = FirebaseVision.instance.faceDetector();
 
   Future<ui.Image> _loadImage(File file) async {
@@ -34,9 +34,12 @@ class _FaceDetectionFromImageState extends State<FaceDetectionFromImage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Face detection with Smile'),
+      ),
       body: Center(
         child: loading
-            ? CircularProgressIndicator()
+            ? Text('Press The floating Action Button for load image!')
             : FittedBox(
                 child: SizedBox(
                   width: image.width.toDouble(),
@@ -47,8 +50,10 @@ class _FaceDetectionFromImageState extends State<FaceDetectionFromImage> {
                 ),
               ),
       ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: pickAndProcessImage),
+      floatingActionButton: FloatingActionButton(
+        onPressed: pickAndProcessImage,
+        child: Icon(Icons.image),
+      ),
     );
   }
 }

@@ -151,7 +151,7 @@ class _FaceDetectionFromLiveCameraState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Face Detection"),
+        title: Text("Face Detection with Smile"),
       ),
       body: _buildImage(),
       floatingActionButton: FloatingActionButton(
