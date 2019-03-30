@@ -1,16 +1,20 @@
-# face_detection
+# Flutter Smile To Face Detection
 
-A new Flutter application.
+In this project I implemented the custom painter illustrated in the last video released by Flutter Team:: [Custom painting in Flutter - Flutter In Focus](https://www.youtube.com/watch?v=vvI_NUXK00s&t=4s). 
 
-## Getting Started
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center">
+  <a href="https://github.com/giandifra/Flutter-Smile-Face-Detection/blob/master/smile_image.jpg">
+    <img src="https://github.com/giandifra/Flutter-Smile-Face-Detection/blob/master/smile_image.jpg" width="200"/></a>
+    <a href="https://github.com/giandifra/Flutter-Smile-Face-Detection/blob/master/smile_live_camera.jpg">
+    <img src="https://github.com/giandifra/Flutter-Smile-Face-Detection/blob/master/smile_live_camera.jpg" width="200"/></a>
+</td>
+</tr></table></div>
 
-This project is a starting point for a Flutter application.
+## Issues
 
-A few resources to get you started if this is your first Flutter project:
+[ ] In Live Camera mode, with front camera, the smile image is painted in opposite direction in the horizontal axis.
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+### Contributor
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Thanks to [Maurice Parrish](https://github.com/bparrishMines) for [mlkit_demo](https://github.com/bparrishMines/mlkit_demo).
